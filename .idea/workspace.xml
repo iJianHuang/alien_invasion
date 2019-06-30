@@ -13,8 +13,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/alien_invasion.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="75" column="29" lean-forward="true" selection-start-line="75" selection-start-column="29" selection-end-line="75" selection-end-column="29" />
+            <state relative-caret-position="484">
+              <caret line="97" column="72" selection-start-line="97" selection-start-column="72" selection-end-line="97" selection-end-column="72" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -103,7 +103,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="381" />
     <option name="y" value="2" />
     <option name="width" value="1400" />
@@ -238,7 +238,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="381" y="2" width="1400" height="1047" extended-state="1" />
+    <frame x="381" y="2" width="1400" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2496329" />
@@ -361,8 +361,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/alien_invasion.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="75" column="29" lean-forward="true" selection-start-line="75" selection-start-column="29" selection-end-line="75" selection-end-column="29" />
+        <state relative-caret-position="484">
+          <caret line="97" column="72" selection-start-line="97" selection-start-column="72" selection-end-line="97" selection-end-column="72" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>

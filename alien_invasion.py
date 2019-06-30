@@ -69,22 +69,33 @@ class AlienInvasion:
                 self.bullets.remove(bullet)
 
     def _create_fleet(self):
-        number_alien_x = self._calculate_number_alien_in_one_row()
-        for alien_number in range(number_alien_x):
-            self._create_alien(alien_number)
+        number_alien = self._calculate_number_alien_in_one_row()
+        number_rows = self._calculate_number_rows()
+        for row_number in range(number_rows):
+            for alien_number in range(number_alien):
+                self._create_alien(alien_number, row_number)
 
     def _calculate_number_alien_in_one_row(self):
         alien = Alien(self)
         alien_width = alien.rect.width
         available_space_x = self.settings.screen_width - (2 * alien_width)
-        number_alien_x = available_space_x // (2 * alien_width)
-        return number_alien_x
+        number_alien = available_space_x // (2 * alien_width)
+        return number_alien
 
-    def _create_alien(self, alien_number):
+    def _calculate_number_rows(self):
         alien = Alien(self)
-        alien_width = alien.rect.width
+        alien_height = alien.rect.height
+        ship_height = self.ship.rect.height
+        available_space_y = self.settings.screen_height - (3 * alien_height) - ship_height
+        number_rows = available_space_y // (2 * alien_height)
+        return number_rows
+
+    def _create_alien(self, alien_number, row_number):
+        alien = Alien(self)
+        alien_width, alien_height = alien.rect.size
         alien.x = alien_width + 2 * alien_width * alien_number
         alien.rect.x = alien.x
+        alien.rect.y = alien.rect.height + 2 * alien_height * row_number
         self.aliens.add(alien)
 
     def _update_screen(self):
